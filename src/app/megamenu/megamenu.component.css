@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav-bar {
+    width: 100%;
+    background: white;
+    height: 50px;
+    padding: 4px 0;
+    box-sizing: border-box;
+}
+
+.nav-bar ul {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    list-style: none;
+    font-weight: bold;
+    position: relative;
+    font-size: 13px;
+    margin-left: 4px;
+}
+
+.nav-bar ul li {
+    width: 12%;
+    float: left;
+    text-align: center;
+    padding: 12px 0;
+    color: black;
+    margin-right: 3px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    height: auto;
+}
+
+.nav-bar ul li:last-child {
+    margin-right: 0;
+}
+
+.nav-bar ul li:hover {
+    color: blue;
+}
+
+.nav-bar ul li:hover .mega-menu {
+    color: black;
+}
+
+.nav-bar ul li .mega-menu p:hover {
+    color: blue;
+}
+
+
+/* mega menu */
+
+.mega-menu {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    height: 335px;
+    background: white;
+    transition: all 0.4s ease;
+    padding: 10px;
+    box-sizing: border-box;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.inner-mega-menu {
+    width: 24%;
+    float: left;
+    margin-right: 1%;
+}
+
+.inner-mega-menu:last-child {
+    margin-right: 0;
+}
+
+.inner-mega-menu p {
+    padding: 10px 0;
+    transition: all 0.4s ease;
+}
+
+.nav-bar ul li:hover .mega-menu {
+    visibility: visible;
+    opacity: 1;
+}

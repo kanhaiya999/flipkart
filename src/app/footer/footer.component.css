@@ -1,0 +1,16 @@
+.vertical {
+    border: none;
+    border-left: 1px solid white;
+    height: 150px;
+    width: 1px;
+    float: left;
+    padding-right: -30px;
+    margin-left: 35px;
+}
+
+.verticat2 {
+    border: none;
+    border-bottom: 1px solid white;
+    width: 1px;
+    width: 100%;
+}
